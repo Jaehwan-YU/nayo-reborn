@@ -9,18 +9,18 @@ public class KeepTip {
 	@Id
 	private String name;
 	private int foodLife;
-	private String foodCate;
+	private int foodCateId;
 	private int keepAreaId;
 	
 	public KeepTip() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public KeepTip(String name, int foodLife, String foodCate, int keepAreaId) {
+
+	public KeepTip(String name, int foodLife, int foodCateId, int keepAreaId) {
 		super();
 		this.name = name;
 		this.foodLife = foodLife;
-		this.foodCate = foodCate;
+		this.foodCateId = foodCateId;
 		this.keepAreaId = keepAreaId;
 	}
 
@@ -40,12 +40,12 @@ public class KeepTip {
 		this.foodLife = foodLife;
 	}
 
-	public String getFoodCate() {
-		return foodCate;
+	public int getFoodCateId() {
+		return foodCateId;
 	}
 
-	public void setFoodCate(String foodCate) {
-		this.foodCate = foodCate;
+	public void setFoodCateId(int foodCateId) {
+		this.foodCateId = foodCateId;
 	}
 
 	public int getKeepAreaId() {
@@ -58,7 +58,7 @@ public class KeepTip {
 
 	@Override
 	public String toString() {
-		return "KeepTip [name=" + name + ", foodLife=" + foodLife + ", foodCate=" + foodCate + ", keepAreaId="
+		return "KeepTip [name=" + name + ", foodLife=" + foodLife + ", foodCateId=" + foodCateId + ", keepAreaId="
 				+ keepAreaId + "]";
 	}
 	

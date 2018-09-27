@@ -11,7 +11,7 @@ public class Recipe {
 	private String title;
 	private String simpleIntro;
 	private String mainImg;
-	private String regEmail;
+	private String regId;
 	private int kcalory;
 	private int nationalId;
 	private int situationId;
@@ -21,14 +21,14 @@ public class Recipe {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Recipe(long id, String title, String simpleIntro, String mainImg, String regEmail, int kcalory,
+	public Recipe(long id, String title, String simpleIntro, String mainImg, String regId, int kcalory,
 			int nationalId, int situationId, int recipeTypeId) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.simpleIntro = simpleIntro;
 		this.mainImg = mainImg;
-		this.regEmail = regEmail;
+		this.regId = regId;
 		this.kcalory = kcalory;
 		this.nationalId = nationalId;
 		this.situationId = situationId;
@@ -67,12 +67,12 @@ public class Recipe {
 		this.mainImg = mainImg;
 	}
 
-	public String getRegEmail() {
-		return regEmail;
+	public String getRegId() {
+		return regId;
 	}
 
-	public void setRegEmail(String regEmail) {
-		this.regEmail = regEmail;
+	public void setRegEmail(String regId) {
+		this.regId = regId;
 	}
 
 	public int getKcalory() {
@@ -110,7 +110,7 @@ public class Recipe {
 	@Override
 	public String toString() {
 		return "Recipe [id=" + id + ", title=" + title + ", simpleIntro=" + simpleIntro + ", mainImg=" + mainImg
-				+ ", regEmail=" + regEmail + ", kcalory=" + kcalory + ", nationalId=" + nationalId + ", situationId="
+				+ ", regId=" + regId + ", kcalory=" + kcalory + ", nationalId=" + nationalId + ", situationId="
 				+ situationId + ", recipeTypeId=" + recipeTypeId + "]";
 	}
 	

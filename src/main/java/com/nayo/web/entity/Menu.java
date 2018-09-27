@@ -10,25 +10,23 @@ public class Menu {
 	
 	@Id
 	private long id;
-	private String regEmail;
+	private String regId;
 	private Date menuDate;
 	private int millId;
 	private long recipeId;
-	private String title;
 	private String menuImg;
 	
 	public Menu() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Menu(long id, String regEmail, Date menuDate, int millId, long recipeId, String title, String menuImg) {
+	public Menu(long id, String regId, Date menuDate, int millId, long recipeId, String title, String menuImg) {
 		super();
 		this.id = id;
-		this.regEmail = regEmail;
+		this.regId = regId;
 		this.menuDate = menuDate;
 		this.millId = millId;
 		this.recipeId = recipeId;
-		this.title = title;
 		this.menuImg = menuImg;
 	}
 
@@ -40,12 +38,12 @@ public class Menu {
 		this.id = id;
 	}
 
-	public String getRegEmail() {
-		return regEmail;
+	public String getRegId() {
+		return regId;
 	}
 
-	public void setRegEmail(String regEmail) {
-		this.regEmail = regEmail;
+	public void setRegId(String regId) {
+		this.regId = regId;
 	}
 
 	public Date getMenuDate() {
@@ -71,15 +69,7 @@ public class Menu {
 	public void setRecipeId(long recipeId) {
 		this.recipeId = recipeId;
 	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
+	
 	public String getMenuImg() {
 		return menuImg;
 	}
@@ -90,9 +80,9 @@ public class Menu {
 
 	@Override
 	public String toString() {
-		return "Menu [id=" + id + ", regEmail=" + regEmail + ", menuDate=" + menuDate + ", millId=" + millId
-				+ ", recipeId=" + recipeId + ", title=" + title + ", menuImg=" + menuImg + "]";
+		return "Menu [id=" + id + ", regId=" + regId + ", menuDate=" + menuDate + ", millId=" + millId + ", recipeId="
+				+ recipeId + ", menuImg=" + menuImg + "]";
 	}
-	
+
 	
 }

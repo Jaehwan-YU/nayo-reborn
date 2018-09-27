@@ -12,7 +12,7 @@ public class Member {
 	private String pwd;
 	private String nickname;
 	private String birth;
-	private int gender;
+	private int genderId;
 	private String profileImg;
 	private String intro;
 	
@@ -20,7 +20,7 @@ public class Member {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Member(String id, String email, String pwd, String nickname, String birth, int gender, String profileImg,
+	public Member(String id, String email, String pwd, String nickname, String birth, int genderId, String profileImg,
 			String intro) {
 		super();
 		this.id = id;
@@ -28,7 +28,7 @@ public class Member {
 		this.pwd = pwd;
 		this.nickname = nickname;
 		this.birth = birth;
-		this.gender = gender;
+		this.genderId = genderId;
 		this.profileImg = profileImg;
 		this.intro = intro;
 	}
@@ -73,12 +73,12 @@ public class Member {
 		this.birth = birth;
 	}
 
-	public int getGender() {
-		return gender;
+	public int getGenderId() {
+		return genderId;
 	}
 
-	public void setGender(int gender) {
-		this.gender = gender;
+	public void setGenderId(int genderId) {
+		this.genderId = genderId;
 	}
 
 	public String getProfileImg() {
@@ -100,7 +100,7 @@ public class Member {
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", email=" + email + ", pwd=" + pwd + ", nickname=" + nickname + ", birth=" + birth
-				+ ", gender=" + gender + ", profileImg=" + profileImg + ", intro=" + intro + "]";
+				+ ", genderId=" + genderId + ", profileImg=" + profileImg + ", intro=" + intro + "]";
 	}
 	
 }

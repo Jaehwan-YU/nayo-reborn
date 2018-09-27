@@ -15,7 +15,7 @@ public class Food {
 	private Date sellLife;
 	private Date regDate;
 	private Date useDate;
-	private String regEmail;
+	private String regId;
 	private int foodCateId;
 	private int keepAreaId;
 	private String foodImg;
@@ -24,7 +24,7 @@ public class Food {
 		
 	}
 
-	public Food(long id, String name, int foodLife, Date sellLife, Date regDate, Date useDate, String regEmail,
+	public Food(long id, String name, int foodLife, Date sellLife, Date regDate, Date useDate, String regId,
 			int foodCateId, int keepAreaId, String foodImg) {
 		super();
 		this.id = id;
@@ -33,7 +33,7 @@ public class Food {
 		this.sellLife = sellLife;
 		this.regDate = regDate;
 		this.useDate = useDate;
-		this.regEmail = regEmail;
+		this.regId = regId;
 		this.foodCateId = foodCateId;
 		this.keepAreaId = keepAreaId;
 		this.foodImg = foodImg;
@@ -87,12 +87,12 @@ public class Food {
 		this.useDate = useDate;
 	}
 
-	public String getRegEmail() {
-		return regEmail;
+	public String getRegId() {
+		return regId;
 	}
 
-	public void setRegEmail(String regEmail) {
-		this.regEmail = regEmail;
+	public void setRegId(String regId) {
+		this.regId = regId;
 	}
 
 	public int getFoodCateId() {
@@ -122,8 +122,8 @@ public class Food {
 	@Override
 	public String toString() {
 		return "Food [id=" + id + ", name=" + name + ", foodLife=" + foodLife + ", sellLife=" + sellLife + ", regDate="
-				+ regDate + ", useDate=" + useDate + ", regEmail=" + regEmail + ", foodCateId=" + foodCateId
-				+ ", keepAreaId=" + keepAreaId + ", foodImg=" + foodImg + "]";
+				+ regDate + ", useDate=" + useDate + ", regId=" + regId + ", foodCateId=" + foodCateId + ", keepAreaId="
+				+ keepAreaId + ", foodImg=" + foodImg + "]";
 	}
 	
 	
