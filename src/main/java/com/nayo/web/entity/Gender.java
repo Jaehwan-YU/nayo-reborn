@@ -4,17 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Mill {
+public class Gender {
 	
 	@Id
 	private int id;
 	private String name;
 	
-	public Mill() {
+	public Gender() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Mill(int id, String name) {
+	public Gender(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -38,7 +38,7 @@ public class Mill {
 
 	@Override
 	public String toString() {
-		return "Mill [id=" + id + ", name=" + name + "]";
+		return "Gender [id=" + id + ", name=" + name + "]";
 	}
 	
 }

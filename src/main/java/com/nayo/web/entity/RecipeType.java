@@ -4,15 +4,23 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class RecipeCate {
+public class RecipeType {
 	
 	@Id
 	private int id;
 	private String name;
 	
-	public RecipeCate(String name, int id) {
+	public RecipeType(int id, String name) {
 		super();
 		this.name = name;
+		this.id = id;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
 		this.id = id;
 	}
 	
@@ -24,17 +32,9 @@ public class RecipeCate {
 		this.name = name;
 	}
 	
-	public int getId() {
-		return id;
-	}
-	
-	public void setId(int id) {
-		this.id = id;
-	}
-	
 	@Override
 	public String toString() {
-		return "RecipeCate [name=" + name + ", id=" + id + "]";
+		return "RecipeType [name=" + name + ", id=" + id + "]";
 	}
 	
 	
