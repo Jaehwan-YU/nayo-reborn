@@ -1,4 +1,4 @@
-package com.nayo.web.entity;
+package com.nayo.web.entity.id;
 
 import java.io.Serializable;
 

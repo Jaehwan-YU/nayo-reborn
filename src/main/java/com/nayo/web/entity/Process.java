@@ -3,6 +3,8 @@ package com.nayo.web.entity;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
+import com.nayo.web.entity.id.ProcessId;
+
 
 @Entity
 public class Process {
