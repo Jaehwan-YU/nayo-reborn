@@ -5,6 +5,8 @@ import java.sql.Date;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
+import com.nayo.web.entity.id.ReportId;
+
 @Entity
 public class Report {
 	
